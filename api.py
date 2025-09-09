@@ -12,8 +12,9 @@ app = FastAPI(
 
 # Konfigurasi CORS
 origins = [
-    "http://localhost:5173",  # Ini adalah alamat frontend React-mu
-    "http://127.0.0.1:5173",  # Tambahkan juga ini sebagai antisipasi
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://rag-tools-frontend.vercel.app",
 ]
 
 app.add_middleware(
